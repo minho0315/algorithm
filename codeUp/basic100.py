@@ -181,3 +181,82 @@
 # # 041
 # a,b = input().split()
 # print(int(a)%int(b))
+
+############ 기초-값변환 ###########
+# # 042
+# f = float(input())
+# print(round(f,2))
+
+############# 기초-산술연산 ##########
+# # 043
+# f1,f2 = input().split()
+# f3 = float(f1)/float(f2)
+# print('%.3f'%f3)
+
+# # 044
+# a, b = input().split()
+# c = int(a) + int(b)
+# print(c)
+# c = int(a) - int(b)
+# print(c)
+# c = int(a) * int(b)
+# print(c)
+# c = int(a) // int(b)
+# print(c)
+# c = int(a) % int(b)
+# print(round(c,2))
+# c = int(a) / int(b)
+# print(round(c,2))
+
+# # 045
+# a,b,c = input().split()
+# s = int(a) + int(b) + int(c)
+# avg = s / 3
+# print(s, round(avg,2))
+
+######### 기초-비트시프트연산 ###########
+# # 046
+# #python에서 실수 값에 대한 시프트 연산은 허용되지 않고 오류가 발생한다.
+# a = input()
+# n = int(a)
+# print(n<<1)
+
+# # 047
+# a, b = input().split()
+# a1 = int(a)
+# b1 = int(b)
+# print(a1<<b1)
+
+######## 기초-비교연산 ##############
+# # 048
+# a, b = input().split()
+# a = int(a)
+# b = int(b)
+# print(a<b)
+
+# # 049
+# a, b = input().split()
+# a = int(a)
+# b = int(b)
+# print(a == b)
+
+# # 050
+# a , b = input().split()
+# a = int(a)
+# b = int(b)
+# print(a<=b)
+
+# # 051
+# a, b = input().split()
+# a = int(a)
+# b = int(b)
+# print(a!=b)
+
+############ 기초-논리연산 ##############
+# # 052
+# n = int(input())
+# print(bool(n))
+
+# # 053
+# n = bool(int(input()))
+# print(not n)
