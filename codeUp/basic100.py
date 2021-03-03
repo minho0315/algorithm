@@ -672,6 +672,7 @@
 # for i in range(1,20):
 #   for j in range(1,20):
 #     print(d[i][j], end=' ')
+<<<<<<< HEAD
 #   print()
 
 # # 096 바둑판
@@ -747,4 +748,6 @@
 # for i in range(10):
 #   for j in range(10):
 #     print(d[i][j], end=' ')
+=======
+>>>>>>> 59d3a9a6fca0250038c22733f64d78cdb89b1414
 #   print()
