@@ -405,3 +405,346 @@
 #   print("fall")
 # else:
 #   print("winter")
+
+######## 기초-반복실행구조 ########
+# # 071
+# n = 1
+# while n!=0:
+#   n=int(input())
+#   if n!=0:
+#     print(n)
+
+# # 072
+# n = int(input())
+# while n!=0:
+#   print(n)
+#   n-=1
+
+# # 073
+# n = int(input())
+# while True:
+#   print(n-1)
+#   n-=1
+#   if n==0:
+#     break
+
+# # 074
+# c =ord(input())
+# t  = ord('a')
+# while t<=c:
+#   print(chr(t), end=' ')
+#   t+=1
+
+# # 075
+# a = int(input())
+# b = 0
+# while b<=a :
+#   print(b)
+#   b+=1
+
+# # 076
+# n = int(input())
+# for i in range(n+1):
+#   print(i)
+
+# # 077
+# n = int(input())
+# s = 0
+# for i in range(1, n+1):
+#   if i%2==0:
+#     s+=i
+
+# print(s)
+
+######## 기초-종합 ################
+# # 078
+# while True:
+#   c = input()
+#   print(c)
+#   if c == 'q':
+#     break
+
+# # 079
+# n = int(input())
+# s = 0
+
+# for i in range(1,n):
+#   s = s+i
+#   if(s>=n):
+#     print(i)
+#     break
+
+# # 080
+# n, m = input().split()
+# n= int(n)
+# m = int(m)
+
+# for i in range(1, n+1):
+#   for j in range(1, m+1):
+#     print(i,j)
+
+# 081
+# n = input()
+
+# if n=='A':
+#   n=10
+#   for i in range(1,16):
+#     print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# if n=='B':
+#   n=11
+#   for i in range(1,16):
+#     print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# if n=='C':
+#   n=12
+#   for i in range(1,16):
+#     print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# if n=='D':
+#   n=13
+#   for i in range(1,16):
+#     print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# if n=='E':
+#   n=14
+#   for i in range(1,16):
+#     print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# if n=='F':
+#   n=15
+#   for i in range(1,16):
+#     print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# #다른풀이
+# n = int(input(),16)
+# for i in range(1, 16) :
+#   print('%X'%n,'*%X'%i,'=%X'%(n*i),sep='')
+
+# # 082
+# n = int(input())
+
+# for i in range(1, n+1) :
+#   if i%10==3 or i%10==6 or i%10==9:
+#     print("X", end=' ')
+#     continue
+#   print(i, end=' ')
+
+# # 083
+# r,g,b = input().split()
+# r=int(r)
+# g=int(g)
+# b=int(b)
+# n = 0
+# for i in range(r):
+#   for j in range(g):
+#     for k in range(b):
+#       print(i,j,k)
+#       n+=1
+# print(n)
+
+# # 084
+# h, b, c, s = input().split()
+# h = int(h)
+# b = int(b)
+# c = int(c)
+# s = int(s)
+
+# n = (h*b*c*s)/8/1024/1024
+# print('%.1f'%n,'MB')
+
+# # 085
+# w, h, b = input().split()
+# w = int(w)
+# h = int(h)
+# b = int(b)
+
+# print('%.2f'%(w*h*b/8/1024/1024),"MB")
+# round는 정확도로 #%f는 둘째자리까지...
+
+# # 086
+# n = int(input())
+# s = 0
+# c = 1
+# while True:
+#   s += c
+#   c += 1
+#   if s>=n:
+#     break
+
+# print(s)
+
+# # 087
+# n = int(input())
+# for i in range(1,n+1):
+#   if i%3==0:
+#     continue
+#   else:
+#     print(i, end=' ')
+
+# # 088
+# a, d, n = input().split()
+# a = int(a)
+# d = int(d)
+# n = int(n)
+# c = d*(n-1)+a
+# print(c)
+
+# # 089
+# a, r, n = input().split()
+# a=int(a)
+# r=int(r)
+# n=int(n)
+# c =a*r**(n-1)
+# print(c)
+
+# # 090
+# a, m, d, n = input().split()
+# a = int(a)
+# m = int(m)
+# d = int(d)
+# n = int(n)
+# for i in range(1,n):
+#   a= a*m + d
+# print(a)
+
+# # 091
+# a,b,c = input().split()
+# a = int(a)
+# b = int(b)
+# c = int(c)
+
+# d = 1
+# while d%a!=0 or d%b!=0 or d%c!=0:
+#   d += 1
+# print(d)
+
+########### 기초-리스트 ############
+# # 092
+# n = int(input())
+# a = input().split()
+
+# for i in range(n):
+#   a[i]=int(a[i])
+
+# d=[]
+# for i in range(24):
+#   d.append(0)
+
+# for i in range(n):
+#   d[a[i]] += 1
+
+# for i in range(1,24):
+#   print(d[i], end=' ')
+
+# # 093
+# n = int(input())
+# a = input().split()
+
+# for i in range(n):
+#   a[i]=int(a[i])
+
+# for i in range(n-1,-1,-1):
+#   print(a[i], end=' ')
+
+# # 094
+# n = int(input())
+# a = input().split()
+
+# for i in range(n):
+#   a[i]=int(a[i])
+
+# m = a[0]
+# for i in range(n):
+#   if m > a[i]:
+#     m = a[i]
+
+# print(m)
+
+# # 095
+# d = [[0 for j in range(20)] for i in range(20)]
+
+# n = int(input())
+# for i in range(n):
+#   x,y = input().split()
+#   d[int(x)][int(y)]=1
+
+# for i in range(1,20):
+#   for j in range(1,20):
+#     print(d[i][j], end=' ')
+#   print()
+
+# # 096 바둑판
+# d=[list(map(int, input().split())) for _ in range(19)]
+# n=int(input())
+
+# for i in range(n):
+#   x,y=input().split()
+#   x=int(x)
+#   y=int(y)
+#   for j in range(19):
+#     if d[j][y-1]==0:
+#       d[j][y-1]=1
+#     else:
+#       d[j][y-1]=0
+
+#     if d[x-1][j]==0:
+#       d[x-1][j]=1
+#     else:
+#       d[x-1][j]=0
+
+# for i in range(19):
+#   for j in range(19):
+#     print(d[i][j], end=' ')
+#   print()
+
+# # 097
+# h,w=input().split()
+# h=int(h)
+# w=int(w)
+
+# dn=[]
+# for i in range(h):
+#   dn.append([])
+#   for j in range(w):
+#     dn[i].append(0)
+
+# n=int(input())
+
+# for i in range(n):
+#   l,d,x,y=input().split()
+#   if int(d)==0:
+#     for j in range(int(l)):
+#       dn[int(x)-1][int(y)-1+j]=1
+#   if int(d)==1:
+#     for j in range(int(l)):
+#       dn[int(x)-1+j][int(y)-1]=1
+
+# for i in range(h):
+#   for j in range(w):
+#     print(dn[i][j], end=' ')
+#   print()
+
+# 098 마지막 문제
+# d=[list(map(int, input().split())) for _ in range(10)]
+# x=1
+# y=1
+# while True:
+#   if d[x][y]==2:
+#     d[x][y]=9
+#     break
+
+#   d[x][y]=9
+
+#   if d[x][y+1]==0 or d[x][y+1]==2:
+#     y+=1
+#   elif d[x][y+1]==1:
+#     if d[x+1][y]==0 or d[x+1][y]==2:
+#       x+=1
+#     else:
+#       break
+  
+# for i in range(10):
+#   for j in range(10):
+#     print(d[i][j], end=' ')
+#   print()
